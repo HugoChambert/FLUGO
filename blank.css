@@ -1,0 +1,71 @@
+/* wite bar */
+#bar{
+    width: 695px; 
+height: 46px; 
+background: rgba(250, 250, 245, 0.65); 
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+border-radius: 20px; 
+border: 1px rgba(109.09, 103.47, 103.47, 0.65) solid;
+}
+
+/* logo  
+
+        <a href="#"><img style="width: 83px; height: 39px" src="fugo.png" id="logo"/></a>
+        <div style="width: 111px; height: 38px; background: #c82021; border-radius: 10px" id="home"></div>
+
+*/
+
+.logo-background {
+    display: block;
+    width: 111px; 
+    height: 38px;
+    background: #c82021;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 83px;
+    height: 39px;
+}
+
+
+#bar {
+    width: 695px; 
+    height: 46px; 
+    background: rgba(250, 250, 245, 0.65); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 20px; 
+    border: 1px rgba(109.09, 103.47, 103.47, 0.65) solid;
+    margin: auto;
+    justify-content: space-between;
+    display: inline-block;
+}
+
+#projects {
+    width: 100%; 
+    height: 100%; 
+    color: black; 
+    font-size: 12px;
+    font-weight: 525; 
+    word-wrap: break-word;
+    font-style: inter;
+}
+ 
+
+#photography{
+    width: 100%; 
+    height: 100%; 
+    color: black; 
+    font-size: 12px;
+    font-weight: 525; 
+    word-wrap: break-word; 
+}
+
+#resume {
+    width: 100%; 
+    height: 100%; 
+    color: White; 
+    font-size: 12px;
+    font-weight: 525; 
+    word-wrap: break-word;
+}

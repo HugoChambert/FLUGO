@@ -1,0 +1,222 @@
+body {
+background-color: rgb(214, 214, 214); 
+margin-bottom: -900px;
+overflow: hidden;
+}
+
+.logo {
+    width: 83px;
+    height: 39px;
+    transition: width 0.5s ease;
+    display: inline-block;
+    transform: translate(325px, -42px);
+}
+
+.logo-background {
+    width: 111px;
+    height: 38px;
+    background: #c82021;
+    border-radius: 10px;
+    transform: translate(425px, -44px);
+    display: inline-block;
+    
+}
+
+.bar-content {
+    margin: -5px;
+}
+
+#bar {
+    width: 695px; 
+    height: 46px; 
+    background: rgba(250, 250, 245, 0.65); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 20px; 
+    border: 1px rgba(109.09, 103.47, 103.47, 0.65) solid;
+    justify-content: space-between;
+    margin: auto;
+    padding-left: 30px;
+    display: fixed;
+    
+}
+#calender {
+    height: 420px;
+    width: 267px;
+    border-radius: 15px;
+    transform: translate(1090px,-788px);
+}
+
+.navigation a {
+    color: black; 
+    font-size: 12px;
+    font-weight: 525;
+    text-decoration: none;
+    font-family: inter;
+    }
+
+#projects {
+    transform: translate(600px, 35px);
+    display: inline-flex;
+}
+#photography {
+    transform: translate(650px, 35px);
+    display: inline-flex;
+}
+
+#resume {
+    transform: translate(700px, 35px);
+    display: inline-flex;
+}
+
+#contact {
+    transform: translate(750px, 35px);
+    display: inline-flex;
+}
+
+.img1 {
+    height: 424px;
+    border-radius: 15px;
+    margin-left: 90px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    color: #c82021;
+    justify-content: space-between;
+} /* Dropdown Button */
+.dropbtn {
+    color: black;
+    font-size: 12px;
+    font-family: inter;
+    border: none;
+    font-weight: 525;
+    overflow: hidden;
+    z-index: -1px;
+  }
+
+/* The container */
+.dropdown {
+display: inline-block;
+overflow: hidden;
+margin-left: 740px;
+margin-bottom: -39px;
+border-radius: 15px;
+z-index: -1px;
+color: rgba(250, 250, 245, 0.65);
+}
+/* Dropdown Content*/
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+border-radius: 15px;
+z-index: 1;
+}
+
+/*Links*/
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+font-family: inter;
+}
+.dropdown-content a:hover {
+text-decoration: underline #c82021;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;
+border-radius: 10px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+   
+
+#box1 {
+    background-color: rgba(254, 254, 251, 0.644);
+    height: 140px;
+    width: 312.5px;
+    border-radius: 15px;
+    transform: translate(750px, -428px);
+} 
+#box2 {
+    background-color: rgba(254, 254, 251, 0.644);
+    height: 140px;
+    width: 312.5px;
+    border-radius: 15px;
+    transform: translate(750px, -404px);
+} 
+/* #playlist {
+    width: 667px;
+    height: 400px;
+    transform: translate(51px, -500px);
+} */
+
+ .page-header {
+  height: 10vh;
+  background-image: url("/path/to/image.jpg");
+  
+}
+
+#name-header {
+    font-family: dragon;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: auto;
+    padding-left: 65px;
+    padding-top: 20px;
+}
+#name-content {
+    font-family: inter;
+    font-size: 15px;
+    padding-left: 40px;
+    transform: translate(0px, -40px);
+    font-weight: 450;
+}
+
+#goals-header{
+    font-family: dragon;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: auto;
+    padding-left: 120px;
+    padding-top: 15px;
+}
+
+.goals {
+    font-family: inter;
+    font-size: 15px;
+    font-weight: 450;
+    transform: translate(40px,-36px)
+}
+.page-header:after {
+    animation: grain 8s steps(10) infinite;
+    background-image: url("grain2.jpg");
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.3;
+    position: fixed;
+    top: -100%;
+    width: 300%;
+    z-index: -1;
+  }
+  
+@keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+  } 
+
