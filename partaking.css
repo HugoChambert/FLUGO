@@ -1,8 +1,16 @@
+@font-face {
+    font-family: inter;
+    src: url(inter.ttf);
+  }
+  @font-face {
+    font-family: dragon;
+    src: url(dragon.ttf);
+  }
+  
 body {
     background-color: rgb(214, 214, 214); 
     margin-bottom: -900px;
    }
-       
    .logo {
    width: 83px;
     height: 39px;
@@ -24,24 +32,180 @@ body {
        .bar-content {
            margin: -5px;
        }
-   
-       #box1{
-       background-color: rgba(254, 254, 251, 0.644);
-       height: 600px;
-       width: 600px;
-       border-radius: 15px;
-       margin-top: -1405px;
-       margin-left: 750px;
+       #title{
+        font-family: dragon;
+        font-size: 240px;
+        letter-spacing: 6px;
+        margin:554px;
+        margin-top: -785px;
+        margin-left: 365px;
        }
-   
-        #box2{
-           background-color: rgba(254, 254, 251, 0.644);
-           height: 600px;
-           width: 400px;
-           border-radius: 15px;
-           margin-left: 950px;
+       #sub-title{
+        font-family: dragon;
+        font-size: 35px;
+        letter-spacing: 2px;
+        margin: 38.5%;
+        margin-top: -570px;
+        overflow: hidden;
+        margin-left: 485px;
+       }
+       .header2{
+           font-family: inter;
+           text-decoration: underline;
+           margin-left: 55px;
            margin-top: 50px;
-           } 
+       }
+       #content1{
+        font-family: inter;
+        font-weight: 550;
+        font-size: 15px;
+        margin-left: 75px;
+        margin-right: 70px;
+        line-height: 25px;
+        margin-top: 40px;
+        text-align: left;
+    }
+    #content2{
+        font-family: inter;
+        font-weight: 550;
+        font-size: 15px;
+        margin-left: 75px;
+        margin-right: 90px;
+        line-height: 25px;
+        margin-top: 40px;
+        text-align: left;
+    }
+    #content3{
+        font-family: inter;
+        font-weight: 550;
+        font-size: 15px;
+        margin-left: 75px;
+        margin-right: 90px;
+        line-height: 25px;
+        margin-top: 40px;
+        text-align: left;
+    }
+    #content4{
+        font-family: inter;
+        font-weight: 550;
+        font-size: 15px;
+        margin-left: 75px;
+        margin-right: 90px;
+        line-height: 25px;
+        margin-top: 40px;
+        text-align: left;
+    }
+    #content5{
+        font-family: inter;
+        font-weight: 550;
+        font-size: 15px;
+        margin-left: 75px;
+        margin-right: 90px;
+        line-height: 25px;
+        margin-top: 40px;
+        text-align: left;
+    }
+    #week1{
+        font-family: inter;
+        font-weight: 800;
+        font-size: 55px;
+        transform: translate(63px, 50px);
+    }
+    #week2{
+        font-family: inter;
+        font-weight: 800;
+        font-size: 55px;
+        transform: translate(63px, 50px);
+    }
+    #week3{
+        font-family: inter;
+        font-weight: 800;
+        font-size: 55px;
+        transform: translate(63px, 50px);
+    }
+    #week4{
+        font-family: inter;
+        font-weight: 800;
+        font-size: 55px;
+        transform: translate(63px, 50px);
+    }
+    #week5{
+        font-family: inter;
+        font-weight: 800;
+        font-size: 55px;
+        transform: translate(63px, 50px);
+    }
+    #sub1{
+        font-family: dragon;
+        font-size: 45px;
+        letter-spacing:2px;
+        font-weight: 35px;
+        transform: translate(75px, 5px);
+    }
+    #sub2{
+        font-family: dragon;
+        font-size: 45px;
+        letter-spacing:2px;
+        font-weight: 35px;
+        transform: translate(75px, 5px);
+    }
+    #sub3{
+        font-family: dragon;
+        font-size: 45px;
+        letter-spacing:2px;
+        font-weight: 35px;
+        transform: translate(75px, 5px);
+    }
+    #sub4{
+        font-family: dragon;
+        font-size: 45px;
+        letter-spacing:2px;
+        font-weight: 35px;
+        transform: translate(75px, 5px);
+    }
+    #sub5{
+        font-family: dragon;
+        font-size: 45px;
+        letter-spacing:2px;
+        font-weight: 35px;
+        transform: translate(75px, 5px);
+    }
+       #box1{
+        background-color: rgba(254, 254, 251, 0.644);
+        height: 430px;
+        width: 600px;
+        border-radius: 15px;
+        margin-top: -500px;
+        margin-left: 100px;
+        }
+        #box2{
+        background-color: rgba(254, 254, 251, 0.644);
+        height: 380px;
+        width: 600px;
+        border-radius: 15px;
+        margin-left: 100px;
+        }
+        #box3{
+            background-color: rgba(254, 254, 251, 0.644);
+            height: 385px;
+            width: 600px;
+            border-radius: 15px;
+            margin-left: 100px;;
+            }
+         #box4{
+            background-color: rgba(254, 254, 251, 0.644);
+            height: 375px;
+            width: 600px;
+            border-radius: 15px;
+            margin-left: 100px;
+            }
+            #box5{
+                background-color: rgba(254, 254, 251, 0.644);
+                height: 430px;
+                width: 600px;
+                border-radius: 15px;
+                margin-left: 100px;
+                }
        
        #bar {
            width: 695px; 
@@ -83,25 +247,75 @@ body {
            transform: translate(750px, 35px);
            display: inline-flex;
        }
-   
-       #img1 {
-           height: 600px;
-           border-radius: 25px;
-           transform: translate(100px, -800px);
-           }
-            #img1:hover {
-               opacity: 75%;
-               } 
-           
-           #img2 {
-               height: 600px;
-               border-radius: 25px;
-               transform: translate(-500px, -150px)
-           }
-           #img2:hover {
-               opacity: 75%;
-           }
-       
+       #sketch1 {
+        height: 905px;
+        border-radius: 15px;
+        margin-left: 650px;
+        margin-top: -387px;
+       }
+       #sketch2 {
+        height: 595px;
+        border-radius: 15px;
+        margin-left: 650px;
+        margin-top: 45px;
+        overflow: hidden;
+       }
+       #sketch3 {
+        height: 185px;
+        border-radius: 15px;
+        margin-left: 650px;
+        margin-bottom: -1320px;
+       }
+       #sketch4 {
+        height: 185px;
+        border-radius: 15px;
+        margin-left: 650px;
+        margin-top: 25px;
+        margin-bottom: -18px;
+       }
+       #sketch5 {
+        height: 185px;
+        border-radius: 15px;
+        margin-left: 966px;
+        margin-bottom: -935px;
+       }
+       #sketch6 {
+        height: 185px;
+        border-radius: 15px;
+        margin-left: 650px;
+        margin-top: 25px;
+       }
+       #sketch7 {
+        height: 185px;
+        border-radius: 15px;
+        margin-left: 950px;
+       }
+       #sketch8 {
+        height: 185px;
+        border-radius: 15px;
+        margin-left: 650px;
+        margin-bottom: -1128px;
+       }
+       #sketch9 {
+        height: 185px;
+        border-radius: 15px;
+        margin-left: 650px;
+       }
+       #sketch10 {
+        height: 185px;
+        border-radius: 15px;
+        margin-left: 965px;
+        margin-bottom: -720px;
+       }
+       #sketch11 {
+        height: 185px;
+        border-radius: 15px;
+        margin-left: 965px;
+        margin-bottom: -913px;
+       }
+       #bottom {
+        margin-bottom: 100px;
+       }
        nav a:hover {
            text-decoration: underline;
            border-radius: 5px;

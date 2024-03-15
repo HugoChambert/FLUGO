@@ -1,9 +1,17 @@
+@font-face {
+  font-family: inter;
+  src: url(inter.ttf);
+}
+@font-face {
+  font-family: dragon;
+  src: url(dragon.ttf);
+}
+
 body {
     background-color: rgb(214, 214, 214); 
     margin-bottom: -900px;
     overflow: auto;
-   }
-       
+   } 
    .logo {
    width: 83px;
     height: 39px;
@@ -77,9 +85,18 @@ body {
         border-radius: 25px;
         height: 2050px;
         transform: translate(150px, -795px);
-        position:absolute;
-        margin-bottom:30px;
+        margin-bottom: -700px;
        }
+       #bottom {
+        margin-bottom: -900px;
+       }
+       #box1{
+        color: #c82021;
+        /* opacity: 100%; */
+        height: 600px;
+        width: 600px;
+        border-radius: 15px;
+        }
        /* Dropdown Button */
        .dropbtn {
         color: black;
@@ -90,7 +107,6 @@ body {
         overflow: hidden;
         z-index: -1px;
       }
-  
   /* The container */
   .dropdown {
     display: inline-block;

@@ -1,9 +1,16 @@
+@font-face {
+    font-family: inter;
+    src: url(inter.ttf);
+  }
+  @font-face {
+    font-family: dragon;
+    src: url(dragon.ttf);
+  }
 body {
 background-color: rgb(214, 214, 214); 
 margin-bottom: -900px;
 overflow: hidden;
 }
-
 .logo {
     width: 83px;
     height: 39px;
@@ -40,10 +47,10 @@ overflow: hidden;
     
 }
 #calender {
-    height: 420px;
+    height: 585px;
     width: 267px;
     border-radius: 15px;
-    transform: translate(1090px,-788px);
+    transform: translate(1090px,-1235px);
 }
 
 .navigation a {
@@ -74,7 +81,7 @@ overflow: hidden;
 }
 
 .img1 {
-    height: 424px;
+    height: 585px;
     border-radius: 15px;
     margin-left: 90px;
 }
@@ -139,23 +146,30 @@ border-radius: 10px;
 
 #box1 {
     background-color: rgba(254, 254, 251, 0.644);
-    height: 140px;
+    height: 425px;
     width: 312.5px;
     border-radius: 15px;
-    transform: translate(750px, -428px);
+    transform: translate(750px, -589px);
 } 
 #box2 {
     background-color: rgba(254, 254, 251, 0.644);
     height: 140px;
     width: 312.5px;
     border-radius: 15px;
-    transform: translate(750px, -404px);
+    transform: translate(750px, -570px);
 } 
-/* #playlist {
+#box3 {
+    background-color: rgba(254, 254, 251, 0.644);
+    height: 140px;
+    width: 630px;
+    border-radius: 15px;
+    transform: translate(430px, -545px);
+} 
+#playlist {
     width: 667px;
     height: 400px;
     transform: translate(51px, -500px);
-} */
+}
 
  .page-header {
   height: 10vh;
@@ -175,8 +189,21 @@ border-radius: 10px;
     font-family: inter;
     font-size: 15px;
     padding-left: 40px;
+    padding-right: 30px;
+    align-content: center;
     transform: translate(0px, -40px);
     font-weight: 450;
+    margin-top: 25px;
+}
+#name-content1 {
+    font-family: inter;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 30px;
+    align-content: center;
+    transform: translate(0px, -40px);
+    font-weight: 450;
+    margin-top: 55px;
 }
 
 #goals-header{
