@@ -278,12 +278,12 @@ border-radius: 10px;}
     }
     #img1 {
         height: 345px;
-        transform: translate(20px, -730px);
+        transform: translate(20px, -770px);
     }
     #box1 {
         height: 345px;
         width: 345px;
-        margin-top: -980px;
+        margin-top: -1030px;
         margin-left: 20px;
     }
     #header {
@@ -308,7 +308,7 @@ border-radius: 10px;}
     }
     #img2 {
         height: 259px;
-        transform: translate(20px, -355px);
+        transform: translate(20px, -395px);
     }
     #header2 {
         font-size: 75px;
@@ -320,7 +320,7 @@ border-radius: 10px;}
         height: 345px;
         width: 345px;
         margin-left: 20px;
-        margin-top: 290px;
+        margin-top: 250px;
     }
     .header2 {
         margin-top: 1px;
