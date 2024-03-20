@@ -278,12 +278,12 @@ border-radius: 10px;}
     }
     #img1 {
         height: 345px;
-        transform: translate(20px, -770px);
+        transform: translate(20px, -795px);
     }
     #box1 {
         height: 345px;
         width: 345px;
-        margin-top: -1030px;
+        margin-top: -1045px;
         margin-left: 20px;
     }
     #header {
@@ -308,7 +308,7 @@ border-radius: 10px;}
     }
     #img2 {
         height: 259px;
-        transform: translate(20px, -395px);
+        transform: translate(20px, -420px);
     }
     #header2 {
         font-size: 75px;
@@ -320,7 +320,7 @@ border-radius: 10px;}
         height: 345px;
         width: 345px;
         margin-left: 20px;
-        margin-top: 250px;
+        margin-top: 295px;
     }
     .header2 {
         margin-top: 1px;
@@ -329,3 +329,4 @@ border-radius: 10px;}
         margin-left: 95px;
         margin-top: -10px;
     }
+}
