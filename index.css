@@ -249,7 +249,7 @@ border-radius: 10px;
 @media screen and (max-width: 400px)
 {
     #bar {
-        width: 325px;
+        width: 333px;
         margin-left: 8px;
     }
     .logo-background {
@@ -284,16 +284,19 @@ border-radius: 10px;
         height: 285px;
         margin-left: 15px;
         margin-top: -15px;
+        width: 333px;
     }
     #box1 {
       transform: translate(12px, 20px);
+        width: 333px;
     }
     #box2 {
      transform: translate(12px, 30px);
+        width: 333px;
     }
     #calender {
         height: 585px;
-        width: 310px;
+        width: 333px;
         border-radius: 15px;
         transform: translate(12px,-15px);
     }
