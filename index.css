@@ -246,4 +246,56 @@ border-radius: 10px;
     80% { transform:translate(3%, 35%) }
     90% { transform:translate(-10%, 10%) }
   } 
+@media screen and (max-width: 320px)
+{
+    #bar {
+        width: 325px;
+        margin-left: 8px;
+    }
+    .logo-background {
+        width: 75px;
+        transform: translate(25px, -44px);
+    }
+    .logo {
+        width: 60px;
+        transform: translate(-46px, -42px);
+    }
+    #projects {
+        transform: translate(115px, 50px);
+        font-size: 8px;
+    }
+    #photography{
+        transform: translate(124px, 50px);
+        font-size: 8px;
+    }
+    #resume {
+       transform: translate(130px, 50px);
+        font-size: 8px;
+    }
+    .dropbtn {
+        font-size: 8px;
+    }
+    .dropdown{
+        margin-left: 280px;
+        margin-bottom: -35px;
+    }
+    /* ^^  NAV BAR  ^^ */
+    .img1 {
+        height: 285px;
+        margin-left: 15px;
+        margin-top: -15px;
+    }
+    #box1 {
+      transform: translate(12px, 20px);
+    }
+    #box2 {
+     transform: translate(12px, 30px);
+    }
+    #calender {
+        height: 585px;
+        width: 310px;
+        border-radius: 15px;
+        transform: translate(12px,-15px);
+    }
+}
 
