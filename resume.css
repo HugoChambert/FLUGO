@@ -180,5 +180,38 @@ body {
          80% { transform:translate(3%, 35%) }
          90% { transform:translate(-10%, 10%) }
        } 
+@media screen and (max-width: 400px)
+{
+    #bar {
+        width: 345px;
+        margin-left: 8px;
+    }
+    .logo-background {
+        width: 75px;
+        transform: translate(25px, -44px);
+    }
+    .logo {
+        width: 60px;
+        transform: translate(-46px, -42px);
+    }
+    #projects {
+        transform: translate(115px, 50px);
+        font-size: 8px;
+    }
+    #photography{
+        transform: translate(124px, 50px);
+        font-size: 8px;
+    }
+    #resume {
+       transform: translate(130px, 50px);
+        font-size: 8px;
+    }
+    .dropbtn {
+        font-size: 8px;
+    }
+    .dropdown{
+        margin-left: 280px;
+        margin-bottom: -35px;
+    }
        
        
