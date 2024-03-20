@@ -245,7 +245,8 @@ border-radius: 10px;}
     .dropdown{
         margin-left: 280px;
         margin-bottom: -35px;
-        #photo4 {
+    }
+    #photo4 {
       height: 250px;
       margin-top: -25px;
       margin-left: 10px;
@@ -284,5 +285,6 @@ border-radius: 10px;}
       height: 250px;
       margin-top: 10px;
       margin-left: 10px;
-        }
     }
+    
+}
