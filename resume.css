@@ -213,5 +213,9 @@ body {
         margin-left: 280px;
         margin-bottom: -35px;
     }
-       
-       
+    #resume3 {
+        height: 685px;
+        transform: translate(1px, -730px);
+    }
+   
+}    
