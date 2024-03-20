@@ -245,4 +245,44 @@ border-radius: 10px;}
     .dropdown{
         margin-left: 280px;
         margin-bottom: -35px;
+        #photo4 {
+      height: 250px;
+      margin-top: -25px;
+      margin-left: 10px;
+    }
+    #photo8 {
+      height: 560px;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    #photo2 {
+      height: 250px;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    #photo5 {
+      height: 250px;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    #photo6 {
+      height: 250px;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    #photo7 {
+      height: 560px;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    #photo1 {
+      height: 250px;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    #photo3 {
+      height: 250px;
+      margin-top: 10px;
+      margin-left: 10px;
+        }
     }
