@@ -478,15 +478,15 @@ body {
     }
     /* ^^  NAV BAR  ^^ */
    #title {
-    font-size: 100px;
+    font-size: 85px;
     margin: 554px;
     margin-top: -805px;
     margin-left: 15px;
    }
    #sub-title {
-    font-size: 13px;
+    font-size: 11px;
     margin-top: -560px;
-    margin-left: 69px;
+    margin-left: 61px;
    }
    #box1 {
     height: 380px;
