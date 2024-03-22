@@ -570,46 +570,33 @@ body {
             margin-right: 30px;
             margin-top: -30px;
            }
-           #sketch1 {
-            height: 555px;
-            margin-left: 0px;
-            margin-top: 1345px;
-           }
            #sketch2 {
-            height: 365px;
-            margin-left: 0;
-            margin-top: 10px;
-           }
-           #sketch6 {
-            height: 117.5px;
-            margin-left: 0px;
-            margin-top: 10px;
-           }
-           #sketch5 {
-            height: 117.5px;
-            margin-left: 189px;
-            margin-top: 1976px;
-           }
-           #sketch8 {
-            height: 117.5px;
-            margin-left:0px;
-            margin-bottom: -1050px;
+            height: 472px;
+            margin-left: -650px;
+            margin-top: 2115px;
            }
            #sketch3 {
-            height: 117.5px;
+            height: 415px;
+            margin-left: -420px;
+            margin-bottom: -105px;
+           }
+           #sketch4 {
+            height: 400px;
+            transform: translate(-2px, 1505px);
+           }
+           #sketch5 {
+            height: 124.5px;
             margin-left: 189px;
-            margin-bottom: -1032px
+            margin-top: 1510px;
            }
-           #sketch10 {
-            height: 117.5px;
-            margin-left: 0px;
-            margin-bottom: -2050px;
+           #sketch6 {
+            height: 272.5px;
+            margin-left: -1011px;
+            margin-bottom: -610px;
            }
-           #sketch11 {
-            height: 117.5px;
-            margin-left: 189px;
-            margin-bottom: -2032px;
+           #sketch8 {
+            height: 287.5px;
+            margin-left: -646px;
+            margin-bottom: -1035px;
            }
-        
        }
-       
