@@ -424,7 +424,7 @@ body {
          80% { transform:translate(3%, 35%) }
          90% { transform:translate(-10%, 10%) }
        } 
- @media screen and (max-width: 390px)
+ @media screen and (max-width: 400px)
        {
            #bar {
                width: 333px;
