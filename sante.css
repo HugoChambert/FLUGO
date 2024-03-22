@@ -424,7 +424,7 @@ body {
          80% { transform:translate(3%, 35%) }
          90% { transform:translate(-10%, 10%) }
        } 
-@media screen and (max-width: 400px)
+ @media screen and (max-width: 400px)
        {
            #bar {
                width: 333px;
@@ -576,27 +576,43 @@ body {
             margin-top: 2115px;
            }
            #sketch3 {
-            height: 415px;
+            height: 375px;
             margin-left: -420px;
-            margin-bottom: -105px;
+            margin-bottom: -65px;
+            width: 184px;
            }
            #sketch4 {
-            height: 400px;
-            transform: translate(-2px, 1505px);
+            height: 410px;
+            transform: translate(-2px, 1465px);
            }
            #sketch5 {
-            height: 124.5px;
+            height: 129px;
             margin-left: 189px;
-            margin-top: 1510px;
+            transform: translate(10px, -2180px);
            }
            #sketch6 {
-            height: 272.5px;
-            margin-left: -1011px;
-            margin-bottom: -610px;
+            height: 280px;
+            margin-left: -1018px;
+            margin-bottom: 325px;
            }
            #sketch8 {
-            height: 287.5px;
-            margin-left: -646px;
-            margin-bottom: -1035px;
+            height: 299px;
+            margin-left: -752px;
+            margin-bottom: -1175px;
            }
+           #sketch7 {
+            height: 207px;
+            transform: translate(272px, -730px);
+            margin-bottom: -140px;
+            }
+            #sketch9 {
+            height: 230px;
+            margin-left: -200px;
+            margin-top: 2705px;
+            }
+            #sketch1 {
+                height: 497px;
+                margin-left: -653PX;
+                margin-bottom: -3777px;
+            }
        }
