@@ -616,3 +616,43 @@ body {
                 margin-bottom: -3777px;
             }
        }
+       @media screen and (max-width: 641px)
+       {
+           #bar {
+               width: 550px;
+               margin-left: 25px;
+               height: 50px;
+           }
+           .logo-background {
+               width: 100px;
+               height: 43px;
+               transform: translate(45px, -54.5px);
+           }
+           .logo {
+               width: 85px;
+               transform: translate(-51px, -49px);
+               height: 50px;
+           }
+           #projects {
+               transform: translate(170px, 40px);
+               font-size: 15px;
+           }
+           #photography{
+               transform: translate(195px, 40px);
+               font-size: 15px;
+           }
+           #resume {
+              transform: translate(220px, 40px);
+               font-size: 15px;
+           }
+           .dropbtn {
+               font-size: 15px;
+           }
+           .dropdown{
+               margin-left: 235px;
+               margin-bottom: -44px;
+           }
+           /* ^^  NAV BAR  ^^ */
+         
+          
+       }
