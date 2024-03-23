@@ -282,19 +282,20 @@ border-radius: 10px;
     /* ^^  NAV BAR  ^^ */
     .img1 {
         height: 285px;
-        margin-left: 15px;
+        margin-left: 38px;
         margin-top: -15px;
     }
     #box1 {
-      transform: translate(12px, 20px);
+      transform: translate(37px, 20px);
+      width: 305px;
     }
     #box2 {
-     transform: translate(12px, 30px);
+     transform: translate(37px, 30px);
     }
     #calender {
         height: 585px;
-        width: 310px;
+        width: 305px;
         border-radius: 15px;
-        transform: translate(12px,-15px);
+        transform: translate(37px,-15px);
     }
 }
