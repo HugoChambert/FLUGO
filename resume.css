@@ -213,10 +213,10 @@ body {
         margin-left: 280px;
         margin-bottom: -35px;
     }
-    /* ^^  NAV BAR  ^^ */
+     /* ^^  NAV BAR  ^^ */
     #resume3 {
-      height: 500px;
-      margin-top: -120px;
-      margin-left: 37px;
+      height: 600px;
+      width: 305px;
+      transform: translate(37px, -785px);
     }
 }
