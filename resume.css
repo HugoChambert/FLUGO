@@ -220,7 +220,7 @@ body {
       transform: translate(37px, -910px);
     }
 }
-@media screen and (min-width: 481px) and (max-width: 641px) 
+@media screen and (min-width: 481px) and (max-width: 800px) 
  {
     #bar {
         width: 550px;
