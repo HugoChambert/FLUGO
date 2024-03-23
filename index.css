@@ -286,16 +286,18 @@ border-radius: 10px;
         margin-top: -15px;
     }
     #box1 {
-      transform: translate(37px, 20px);
+      transform: translate(37px, 10px);
       width: 305px;
+      height: 450px;
+
     }
     #box2 {
-     transform: translate(37px, 30px);
+     transform: translate(37px, 20px);
     }
     #calender {
         height: 585px;
         width: 305px;
         border-radius: 15px;
-        transform: translate(37px,-15px);
+        transform: translate(37px,-65px);
     }
 }
