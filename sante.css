@@ -616,7 +616,7 @@ body {
                 margin-bottom: -3777px;
             }
        }
-@media screen and (min-width: 481px) and (max-width: 641px) 
+@media screen and (min-width: 481px) and (max-width: 800px) 
  {
     #bar {
         width: 550px;
