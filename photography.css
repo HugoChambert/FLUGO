@@ -213,7 +213,7 @@ border-radius: 10px;}
       80% { transform:translate(3%, 35%) }
       90% { transform:translate(-10%, 10%) }
     } 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 480px)
 {
     #bar {
         width: 333px;
@@ -296,7 +296,7 @@ border-radius: 10px;}
       width: 305px;
     }
 }
- @media screen and (min-width: 401px) and (max-width: 641px) 
+ @media screen and (min-width: 481px) and (max-width: 641px) 
  {
     #bar {
         width: 550px;
