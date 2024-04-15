@@ -220,40 +220,141 @@ body {
       transform: translate(37px, -910px);
     }
 }
-@media screen and (min-width: 481px) and (max-width: 800px) 
+@media screen and (min-width: 481px) and (max-width: 576px) 
+{
+   #bar {
+       width: 480px;
+       margin-left: 25px;
+       height: 50px;
+   }
+   .logo-background {
+       width: 100px;
+       height: 43px;
+       transform: translate(45px, -54.5px);
+   }
+   .logo {
+       width: 85px;
+       transform: translate(-51px, -49px);
+       height: 50px;
+   }
+   #projects {
+       transform: translate(170px, 37px);
+       font-size: 12px;
+   }
+   #photography{
+       transform: translate(195px, 37px);
+       font-size: 12px;
+   }
+   #resume {
+      transform: translate(220px, 37px);
+       font-size: 12px;
+   }
+   .dropbtn {
+       font-size: 12px;
+   }
+   .dropdown{
+       margin-left: 235px;
+       margin-bottom: -41px;
+   }
+       /* ^^  NAV BAR  ^^ */
+       #resume3 {
+        height: 700px;
+        width: 406px;
+        transform: translate(72px, -740px);
+      }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) 
  {
     #bar {
-        width: 550px;
+        width: 670px;
         margin-left: 25px;
-        height: 50px;
+        height: 60px;
     }
     .logo-background {
-        width: 100px;
-        height: 43px;
-        transform: translate(45px, -54.5px);
+        width: 120px;
+        height: 53px;
+        transform: translate(45px, -57.5px);
     }
     .logo {
-        width: 85px;
-        transform: translate(-51px, -49px);
+        width: 105px;
+        transform: translate(-70px, -56px);
         height: 50px;
     }
     #projects {
-        transform: translate(170px, 40px);
-        font-size: 15px;
+        transform: translate(210px, 43px);
+        font-size: 17px;
     }
     #photography{
-        transform: translate(195px, 40px);
-        font-size: 15px;
+        transform: translate(235px, 43px);
+        font-size: 17px;
     }
     #resume {
-       transform: translate(220px, 40px);
-        font-size: 15px;
+       transform: translate(260px, 43px);
+        font-size: 17px;
+
     }
-    .dropbtn {
-        font-size: 15px;
-    }
+     .dropbtn {
+        font-size: 17px;
+     }
     .dropdown{
-        margin-left: 235px;
-        margin-bottom: -44px;
+        margin-left: 280px;
+        margin-bottom: -48px;
     }
+        /* ^^  NAV BAR  ^^ */
+ 
+        #resume3 {
+            height: 854px;
+            width: 560px;
+            transform: translate(90px, -740px);
+          }
  }
+ @media screen and (min-width: 769px) and (max-width: 1024px) 
+ {
+    #bar {
+        width: 730px;
+        margin-left: 125px;
+        height: 60px;
+    }
+    .logo-background {
+        width: 120px;
+        height: 53px;
+        transform: translate(156px, -57.5px);
+    }
+    .logo {
+        width: 105px;
+        transform: translate(40px, -56px);
+        height: 50px;
+    }
+    #projects {
+        transform: translate(325px, 43px);
+        font-size: 17px;
+    }
+    #photography{
+        transform: translate(360px, 43px);
+        font-size: 17px;
+    }
+    #resume {
+       transform: translate(400px, 43px);
+        font-size: 17px;
+
+    }
+     .dropbtn {
+        font-size: 17px;
+
+     }
+    .dropdown{
+        margin-left: 430px;
+        margin-bottom: -48px;
+    }
+        /* ^^  NAV BAR  ^^ */
+        #resume3 {
+            height: 1154px;
+            width: 760px;
+            transform: translate(120px, -940px);
+          }
+         
+ }       
+
+       
+
+
