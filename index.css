@@ -301,10 +301,10 @@ border-radius: 10px;
         transform: translate(37px,-40px);
     }
 }
-@media screen and (min-width: 481px) and (max-width: 800px) 
+@media screen and (min-width: 481px) and (max-width: 576px) 
  {
     #bar {
-        width: 550px;
+        width: 480px;
         margin-left: 25px;
         height: 50px;
     }
@@ -319,24 +319,275 @@ border-radius: 10px;
         height: 50px;
     }
     #projects {
-        transform: translate(170px, 40px);
-        font-size: 15px;
+        transform: translate(170px, 37px);
+        font-size: 12px;
     }
     #photography{
-        transform: translate(195px, 40px);
-        font-size: 15px;
+        transform: translate(195px, 37px);
+        font-size: 12px;
     }
     #resume {
-       transform: translate(220px, 40px);
-        font-size: 15px;
+       transform: translate(220px, 37px);
+        font-size: 12px;
     }
     .dropbtn {
-        font-size: 15px;
+        font-size: 12px;
     }
     .dropdown{
         margin-left: 235px;
-        margin-bottom: -44px;
+        margin-bottom: -41px;
     }
+        /* ^^  NAV BAR  ^^ */
+        .img1 {
+            height: 381px;
+            margin-left: 72px;
+            margin-top: -15px;
+        }
+        #box1 {
+          transform: translate(72px, 15px);
+          width: 406px;
+          height: 430px;
+    
+        }
+        #box2 {
+         transform: translate(72px, 35px);
+         width: 406px;
+         height: 150px;
+
+        }
+        #calender {
+            height: 585px;
+            width: 406px;
+            border-radius: 15px;
+            transform: translate(72px,-5px);
+        }
+        #name-header {
+            padding-left: 115px;
+            padding-top: 40px;
+        }
+        #name-content {
+            padding-left: 65px;
+            padding-right: 45px;
+            align-content: center;
+            margin-top: 25px;
+        }
+        #name-content1 {
+            padding-left: 65px;
+            padding-right: 55px;
+            align-content: center;
+            margin-top: 75px;
+        }
+        
+        #goals-header{
+            margin-top: auto;
+            padding-left: 170px;
+            padding-top: 15px;
+        }
+        .goals {
+            font-family: inter;
+            font-size: 15px;
+            font-weight: 450;
+            transform: translate(65px,-36px)
+        }
+        
  }
+ @media screen and (min-width: 577px) and (max-width: 768px) 
+ {
+    #bar {
+        width: 670px;
+        margin-left: 25px;
+        height: 60px;
+    }
+    .logo-background {
+        width: 120px;
+        height: 53px;
+        transform: translate(45px, -57.5px);
+    }
+    .logo {
+        width: 105px;
+        transform: translate(-70px, -56px);
+        height: 50px;
+    }
+    #projects {
+        transform: translate(210px, 43px);
+        font-size: 17px;
+    }
+    #photography{
+        transform: translate(235px, 43px);
+        font-size: 17px;
+    }
+    #resume {
+       transform: translate(260px, 43px);
+        font-size: 17px;
+
+    }
+     .dropbtn {
+        font-size: 17px;
+     }
+    .dropdown{
+        margin-left: 280px;
+        margin-bottom: -48px;
+    }
+        /* ^^  NAV BAR  ^^ */
+        .img1 {
+            height: 560px;
+            margin-left: 72px;
+            margin-top: -15px;
+        }
+        #box1 {
+          transform: translate(72px, 195px);
+          width: 290px;
+          height: 430px;
+    
+        }
+        #box2 {
+         transform: translate(72px, 395px);
+         width: 290px;
+         height: 150px;
+
+        }
+        section {
+            margin-top: -170px
+        }
+        #calender {
+            height: 610px;
+            width: 290px;
+            border-radius: 15px;
+            transform: translate(380px,-118px);
+        }
+        #name-header {
+            padding-left: 60px;
+            padding-top: 40px;
+        }
+        #name-content {
+            padding-left: 45px;
+            padding-right: 30px;
+            align-content: center;
+            margin-top: 25px;
+            font-size: 13px;
+        }
+        #name-content1 {
+            padding-left: 45px;
+            padding-right: 30px;
+            align-content: center;
+            margin-top: 65px;
+            font-size: 13px;
+        }
+        
+        #goals-header{
+            margin-top: auto;
+            padding-left: 110px;
+            padding-top: 15px;
+        }
+        .goals {
+            font-family: inter;
+            font-size: 13px;
+            font-weight: 450;
+            transform: translate(40px,-30px)
+        }
+        
+ }
+ @media screen and (min-width: 769px) and (max-width: 1024px) 
+ {
+    #bar {
+        width: 730px;
+        margin-left: 125px;
+        height: 60px;
+    }
+    .logo-background {
+        width: 120px;
+        height: 53px;
+        transform: translate(156px, -57.5px);
+    }
+    .logo {
+        width: 105px;
+        transform: translate(40px, -56px);
+        height: 50px;
+    }
+    #projects {
+        transform: translate(325px, 43px);
+        font-size: 17px;
+    }
+    #photography{
+        transform: translate(360px, 43px);
+        font-size: 17px;
+    }
+    #resume {
+       transform: translate(400px, 43px);
+        font-size: 17px;
+
+    }
+     .dropbtn {
+        font-size: 17px;
+
+     }
+    .dropdown{
+        margin-left: 430px;
+        margin-bottom: -48px;
+    }
+        /* ^^  NAV BAR  ^^ */
+        .img1 {
+            height: 620px;
+            width: 760px;
+            margin-left: 120px;
+            margin-top: -15px;
+        }
+        #box1 {
+          transform: translate(122px, 195px);
+          width: 400px;
+          height: 430px;
+    
+        }
+        #box2 {
+         transform: translate(122px, 395px);
+         width: 400px;
+         height: 150px;
+
+        }
+        section {
+            margin-top: -170px
+        }
+        #calender {
+            height: 610px;
+            width: 325px;
+            border-radius: 15px;
+            transform: translate(555px,-118px);
+        }
+        #name-header {
+            padding-left: 115px;
+            padding-top: 40px;
+        }
+        #name-content {
+            padding-left: 45px;
+            padding-right: 30px;
+            align-content: center;
+            margin-top: 25px;
+            font-size: 15px;
+        }
+        #name-content1 {
+            padding-left: 45px;
+            padding-right: 30px;
+            align-content: center;
+            margin-top: 65px;
+            font-size: 15px;
+        }
+        
+        #goals-header{
+            margin-top: auto;
+            padding-left: 170px;
+            padding-top: 15px;
+        }
+        .goals {
+            font-family: inter;
+            font-size: 15px;
+            font-weight: 450;
+            transform: translate(75px,-30px)
+        }
+        
+ }       
+
+       
+
+
        
 
