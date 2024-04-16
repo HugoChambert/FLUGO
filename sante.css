@@ -1196,50 +1196,53 @@ body {
            }
           /* COLOR STUDY  */
            #sketch2 {
-            height: 782px;
+            height: 532px;
             margin-left: -650px;
             margin-top: 1933px;
-            width: 760px;
+            width: 330px;
            }
            /* mockup1 bottle*/
            #sketch3 {
-            height: 1100px;
-            margin-left: -615px;
-            margin-bottom: -1790px;
-            width: 760px;
+            height: 400px;
+            margin-left: -385px;
+            margin-bottom: -100px;
+            width: 260px;
            }
            /* flat package design sketch */
            #sketch4 {
-            height: 572px;
-            transform: translate(0px, 1765px);
-            width: 760px;
+            height: 402px;
+            transform: translate(290px, 1097px);
+            width: 470px;
            }
            /* the better mockup */
            #sketch5 {
-            height: 450px;
+            height: 550px;
             margin-left: 0px;
-            width: 560px;
-            transform: translate(0px, 3055px);
+            width: 760px;
+            transform: translate(0px, 1370px);
            }
            /* final mockup */
            #sketch6 {
-            height: 440px;
-            width: 560px;
+            height: 540px;
+            width: 760px;
             margin-left: -650px;
-            margin-bottom: 40px;
+            margin-bottom: -2540px;
            }
            /* flat final package design */
            #sketch8 {
-            height: 480px;
-            width: 595px;
-            margin-left: -1127.5px;
-            margin-top: 4635px;
+            height: 580px;
+            width: 805px;
+            margin-left: -656px;
+            margin-top: 3500px;
            }
            /* poster mockup subway */
            #sketch7 {
-            height: 325px;
-            width: 560px;
-            transform: translate(86px, -325px);
+            height: 525px;
+            width: 760px;
+            margin-bottom: -3070px;
+            margin-left: -115px;
+            padding-bottom: fixed;
+            /* transform: translate(-115px, -225px);  */
             }
             /* white poster final */
             #sketch9 {
@@ -1247,13 +1250,13 @@ body {
             width: 561px;
             margin-left: -752px;
             margin-bottom: -2410px;
-            transform: translate(-752px, -2410px);
+            transform: translate(-4052px, -4410px);
             }
             /* package  construction sketch */
             #sketch1 {
-                height: 597px;
-                width: 60px;
-                margin-left: -650px;
-                margin-bottom: -3090px;
+                height: 530px;
+                width: 400px;
+                margin-left: -290px;
+                margin-bottom: -2270px;
             }
- }
+ }       
