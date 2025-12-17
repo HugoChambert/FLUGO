@@ -777,6 +777,10 @@ section {
     font-size: 32px;
   }
 
+  .container {
+    padding-top: 360px;
+  }
+
   .hero p {
     font-size: 20px;
   }
@@ -788,7 +792,7 @@ section {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero .container {
-    padding-top: 590px;
+    padding-top: 570px;
   }
 }
 
