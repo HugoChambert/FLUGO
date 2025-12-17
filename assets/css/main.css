@@ -731,7 +731,6 @@ section {
 .hero .container {
   position: relative;
   z-index: 3;
-  padding-top: 680px;
 }
 
 .hero h2 {
@@ -792,7 +791,7 @@ section {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero .container {
-    padding-top: 570px;
+    padding-top: 300px;
   }
 }
 
