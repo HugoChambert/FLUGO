@@ -868,7 +868,56 @@ section {
   transition: 0.9s;
   background-color: var(--accent-color);
 }
+/* Skills section */
+.about-skills-title {
+  font-family: var(--heading-font);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  color: var(--heading-color);
+  margin-bottom: 8px;
+}
 
+.about-skills-sub {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 45%);
+  margin-bottom: 40px;
+}
+
+.skill-group-label {
+  font-family: var(--nav-font);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 16px;
+}
+
+/* Skill tag pills */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 0;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 7px 16px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 75%);
+  font-family: var(--nav-font);
+  font-size: 13px;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+  background: var(--surface-color);
+  transition: border-color 0.2s, color 0.2s;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  border-color: var(--accent-color);
+  color: var(--heading-color);
+}
 /*--------------------------------------------------------------
 # Interests Section
 --------------------------------------------------------------*/
