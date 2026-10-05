@@ -22,6 +22,29 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Push hero content to lower third of the viewport */
+    #hero {
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding-bottom: 14vh;
+    }
+
+    /* Gradient overlay — static, loops through three stops */
+    #hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.08) 0%,
+        rgba(0, 0, 0, 0.35) 50%,
+        rgba(0, 0, 0, 0.72) 100%
+      );
+    }
+  </style>
 </head>
 
 <body class="index-page">
