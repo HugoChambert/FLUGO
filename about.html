@@ -4,9 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>FLUGO [PORTFOLIO]</title>
+  <title>About — FLUGO</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -22,17 +26,110 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/portfolio-details.css" rel="stylesheet">
+
+  <style>
+    /* ── About page overrides ──────────────────────────────── */
+    .about-profile-img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 4px;
+      display: block;
+    }
+
+    .about-role {
+      font-family: var(--nav-font);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      margin-bottom: 14px;
+    }
+
+    .about-bio h2 {
+      font-family: var(--heading-font);
+      font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+      font-weight: 700;
+      color: var(--heading-color);
+      margin-bottom: 22px;
+      line-height: 1.3;
+    }
+
+    .about-bio p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: color-mix(in srgb, var(--default-color), transparent 25%);
+      margin-bottom: 16px;
+    }
+
+    .about-bio p:last-child { margin-bottom: 0; }
+
+    /* Skills section */
+    .about-skills-title {
+      font-family: var(--heading-font);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      color: var(--heading-color);
+      margin-bottom: 8px;
+    }
+
+    .about-skills-sub {
+      font-size: 14px;
+      color: color-mix(in srgb, var(--default-color), transparent 45%);
+      margin-bottom: 40px;
+    }
+
+    .skill-group-label {
+      font-family: var(--nav-font);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      margin-bottom: 16px;
+    }
+
+    /* Skill tag pills */
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 0;
+    }
+
+    .skill-tag {
+      display: inline-block;
+      padding: 7px 16px;
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 75%);
+      font-family: var(--nav-font);
+      font-size: 13px;
+      font-weight: 500;
+      color: color-mix(in srgb, var(--default-color), transparent 15%);
+      background: var(--surface-color);
+      transition: border-color 0.2s, color 0.2s;
+      cursor: default;
+    }
+
+    .skill-tag:hover {
+      border-color: var(--accent-color);
+      color: var(--heading-color);
+    }
+
+    /* Override the global img-fluid border-radius for this page only */
+    .about-profile-img { border-radius: 4px; }
+  </style>
 </head>
 
 <body class="about-page">
 
- <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/fugo.png" alt="FLUGO logo">
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -43,47 +140,52 @@
         </ul>
         <button class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Toggle navigation"></button>
       </nav>
-
     </div>
   </header>
 
-  <main class="main"></main>
-  <!-- Page Title -->
-  
-    </div><!-- End Page Title -->
+  <main class="main">
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
+    <!-- ── About Section ──────────────────────────────────── -->
+    <section id="about" class="about section" style="padding-top: 100px;">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img-min.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Grahpic Designer &amp; Software Developer.</h2>
-            <p>
-              I’m a software developer with four years of hands-on experience building scalable, efficient, and maintainable software solutions in collaborative, team-driven environments. I enjoy solving complex technical problems, breaking them down into practical solutions, and building reliable systems with a strong focus on performance, usability, and long-term maintainability.
-            </p>
-            
-            <p class="py-3">
-             I have a strong foundation in software development and value clean architecture, reusable code, effective debugging, testing, version control, and clear technical documentation. I’m comfortable working through complex requirements, identifying technical challenges, and translating them into well-structured implementations.
-            </p>
 
-            <p>My background in graphic design also influences how I approach development, giving me a strong understanding of user experience and visual design. This allows me to bridge the gap between design and engineering, creating solutions that are both technically robust and intuitive to use.
-            </p>
+        <!-- Page heading -->
+        <p class="about-role">Graphic Designer &amp; Software Developer</p>
+        <h1 class="pd-title">About Me</h1>
+        <span class="pd-title-line"></span>
 
-            <p>I work well in collaborative environments and value clear communication, knowledge sharing, and continuous learning. I’m always looking to improve my technical skills, take on challenging projects, and contribute to building high-quality software.
-            </p>
-            
+        <div class="row gy-5 align-items-start">
+
+          <!-- Profile image -->
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <img src="assets/img/profile-img-min.jpg" class="about-profile-img" alt="Profile photo">
           </div>
+
+          <!-- Bio -->
+          <div class="col-lg-9 col-md-8" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-bio">
+              <h2>Graphic Designer &amp; Software Developer.</h2>
+              <p>
+                I'm a software developer with four years of hands-on experience building scalable, efficient, and maintainable software solutions in collaborative, team-driven environments. I enjoy solving complex technical problems, breaking them down into practical solutions, and building reliable systems with a strong focus on performance, usability, and long-term maintainability.
+              </p>
+              <p>
+                I have a strong foundation in software development and value clean architecture, reusable code, effective debugging, testing, version control, and clear technical documentation. I'm comfortable working through complex requirements, identifying technical challenges, and translating them into well-structured implementations.
+              </p>
+              <p>
+                My background in graphic design also influences how I approach development, giving me a strong understanding of user experience and visual design. This allows me to bridge the gap between design and engineering, creating solutions that are both technically robust and intuitive to use.
+              </p>
+              <p>
+                I work well in collaborative environments and value clear communication, knowledge sharing, and continuous learning. I'm always looking to improve my technical skills, take on challenging projects, and contribute to building high-quality software.
+              </p>
+            </div>
+          </div>
+
         </div>
 
       </div>
-
     </section><!-- /About Section -->
 
-     <!-- ── Skills Section ─────────────────────────────────── -->
+    <!-- ── Skills Section ─────────────────────────────────── -->
     <section class="skills section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -140,17 +242,12 @@
 
       </div>
     </section><!-- /Skills Section -->
-    
 
   </main>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -161,8 +258,6 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
