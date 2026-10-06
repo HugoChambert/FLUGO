@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>FLUGO [PORTFOLIO]</title>
+  <title>Resume — FLUGO</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -27,11 +27,172 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/portfolio-details.css" rel="stylesheet">
+
+  <style>
+    /* ── Resume page overrides ─────────────────────────────── */
+
+    .resume-header-role {
+      font-family: var(--nav-font);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      margin-bottom: 14px;
+    }
+
+    .resume-contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+    }
+
+    .resume-contact-list li {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 14px;
+      color: color-mix(in srgb, var(--default-color), transparent 25%);
+    }
+
+    .resume-contact-list li i {
+      color: var(--accent-color);
+      font-size: 15px;
+    }
+
+    .resume-download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 22px;
+      border: 1.5px solid var(--accent-color);
+      color: var(--accent-color);
+      font-family: var(--nav-font);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+      margin-bottom: 48px;
+    }
+
+    .resume-download-btn:hover {
+      background: var(--accent-color);
+      color: #fff;
+    }
+
+    /* Timeline section label */
+    .resume-section-label {
+      font-family: var(--nav-font);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      margin-bottom: 20px;
+    }
+
+    /* Override default resume-title from main.css to match the site's pd-title style */
+    .resume .resume-title {
+      font-family: var(--heading-font);
+      font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+      font-weight: 800;
+      color: var(--heading-color);
+      margin-top: 36px;
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+
+    /* Tighten the timeline dot to match dark surface */
+    .resume .resume-item::before {
+      background: var(--background-color);
+    }
+
+    /* Date badge */
+    .resume .resume-item h5 {
+      background: color-mix(in srgb, var(--accent-color), transparent 85%);
+      color: var(--accent-color);
+      border-radius: 2px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    /* Role title */
+    .resume .resume-item h4 {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: none;
+      color: var(--heading-color);
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+
+    /* Org name in em */
+    .resume .resume-item > p > em {
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      color: color-mix(in srgb, var(--default-color), transparent 40%);
+    }
+
+    /* Summary blurb */
+    .resume-summary-text {
+      font-size: 15px;
+      line-height: 1.85;
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+      margin-bottom: 0;
+    }
+
+    /* Skills grid at the bottom */
+    .resume-skills-row {
+      margin-top: 52px;
+    }
+
+    .skill-group-label {
+      font-family: var(--nav-font);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      margin-bottom: 16px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-tag {
+      display: inline-block;
+      padding: 7px 16px;
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 75%);
+      font-family: var(--nav-font);
+      font-size: 13px;
+      font-weight: 500;
+      color: color-mix(in srgb, var(--default-color), transparent 15%);
+      background: var(--surface-color);
+      transition: border-color 0.2s, color 0.2s;
+      cursor: default;
+    }
+
+    .skill-tag:hover {
+      border-color: var(--accent-color);
+      color: var(--heading-color);
+    }
+  </style>
 </head>
 
 <body class="resume-page">
 
- <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
@@ -44,7 +205,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="services.html">Photography</a></li>
-          <li><a href="resume.html">Resume</a></li>
+          <li><a href="resume.html" class="active">Resume</a></li>
         </ul>
         <button class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Toggle navigation"></button>
       </nav>
@@ -54,90 +215,143 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
+    <!-- Resume Section -->
+    <section id="resume" class="resume section" style="padding-top: 100px;">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Page heading -->
+        <p class="resume-header-role">Front-End Developer &amp; System Administrator</p>
+        <h1 class="pd-title">Resume</h1>
+        <span class="pd-title-line"></span>
+
+        <!-- Contact info row -->
+        <ul class="resume-contact-list" data-aos="fade-up" data-aos-delay="120">
+          <li><i class="bi bi-geo-alt-fill"></i> Fairfax, Virginia</li>
+          <li><i class="bi bi-telephone-fill"></i> (571) 882-4546</li>
+          <li><i class="bi bi-envelope-fill"></i> hchambert@yahoo.com</li>
+        </ul>
+
+        <!-- Download button -->
+        <a href="assets/resume.pdf" download class="resume-download-btn" data-aos="fade-up" data-aos-delay="140">
+          <i class="bi bi-download"></i> Download PDF
+        </a>
+
+        <!-- Summary -->
+        <div class="row" data-aos="fade-up" data-aos-delay="160">
+          <div class="col-12">
+            <p class="resume-summary-text">
+              Results-driven Front-End Developer with hands-on experience in software tools and IT systems administration. Developed responsive, user-friendly interfaces and resolved complex software and hardware issues. Applied problem-solving and system optimization skills to deliver dependable digital solutions while collaborating effectively across technical and non-technical teams.
+            </p>
           </div>
         </div>
-      </div>
-    </div><!-- End Page Title -->
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+        <hr class="pd-divider">
 
-      <div class="container">
-
+        <!-- Education + Experience columns -->
         <div class="row">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Hugo Chambert</h4>
-              <p><em>Results-driven Front-End Developer with hands-on experience in software tools and IT systems administration. Developed responsive, user-friendly interfaces and resolved complex software and hardware issues. Applied problem-solving and system optimization skills to deliver dependable digital solutions while collaborating effectively across technical and non-technical teams. </em></p>
-              <ul>
-                <li>Fairfax, Virginia</li>
-                <li>(571)-882-4546</li>
-                <li>hchambert@yahoo.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+          <!-- Left column: Education + Skills -->
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
 
             <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Visual Arts (AFA) / Graphic Design</h4>
-              <h5>2022-2024</h5>
-              <p><em>Northern Virginia Community College</em></p>
-              <p></p>
-            </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Bachelor / Art and Visual Technology</h4>
-              <h5>2024-2026</h5>
+              <h4>Visual Arts (AFA) / Graphic Design</h4>
+              <h5>2022 – 2024</h5>
+              <p><em>Northern Virginia Community College</em></p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Bachelor of Art and Visual Technology</h4>
+              <h5>2024 – 2026</h5>
               <p><em>George Mason University</em></p>
-              <p></p>
-            </div><!-- Edn Resume Item -->
+            </div>
+
+            <h3 class="resume-title">Skills</h3>
+
+            <div style="margin-bottom: 28px;">
+              <p class="skill-group-label">Development</p>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 28px;">
+              <p class="skill-group-label">Design</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Photoshop</span>
+                <span class="skill-tag">Illustrator</span>
+                <span class="skill-tag">InDesign</span>
+                <span class="skill-tag">Lightroom</span>
+                <span class="skill-tag">Premiere Pro</span>
+                <span class="skill-tag">Package Design</span>
+                <span class="skill-tag">Typography</span>
+              </div>
+            </div>
+
+            <div>
+              <p class="skill-group-label">Tools &amp; Systems</p>
+              <div class="skill-tags">
+                <span class="skill-tag">IT Administration</span>
+                <span class="skill-tag">Network Support</span>
+                <span class="skill-tag">Microsoft Excel</span>
+                <span class="skill-tag">Database Management</span>
+                <span class="skill-tag">System Diagnostics</span>
+                <span class="skill-tag">Technical Documentation</span>
+              </div>
+            </div>
 
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <!-- Right column: Experience -->
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+
             <h3 class="resume-title">Professional Experience</h3>
+
             <div class="resume-item">
               <h4>System Administrator</h4>
               <h5>Ongoing</h5>
-              <p><em>Universal Stones, Warrenton VA</em></p>
+              <p><em>Universal Stones — Warrenton, VA</em></p>
               <ul>
                 <li>Maintain and support company IT systems, including servers, workstations, networks, and critical software used in daily operations.</li>
-                <li>Run system diagnostics, monitor performances, and troubleshoot issues to minimize downtime and ensure a stable technical environment.</li>
+                <li>Run system diagnostics, monitor performance, and troubleshoot issues to minimize downtime and ensure a stable technical environment.</li>
                 <li>Perform regular maintenance, calibration, and troubleshooting of BACA robotic cutting machines used for granite fabrication.</li>
               </ul>
             </div>
+
             <div class="resume-item">
               <h4>Data Entry Specialist</h4>
               <h5>9 Months</h5>
-              <p><em>Southern Airways Express (IAD), Virginia, VA </em></p>
+              <p><em>Southern Airways Express (IAD) — Virginia</em></p>
               <ul>
-                <li>Executed high-volume data entry, record validation, and database maintenance using internal airline information systems and computerized data-management platforms. </li>
+                <li>Executed high-volume data entry, record validation, and database maintenance using internal airline information systems and computerized data-management platforms.</li>
                 <li>Utilized Microsoft Excel for data organization, sorting, filtering, reconciliation, error identification, and operational reporting.</li>
-                <li>Contributed to operational efficiency and safety in aviation by following strict guidlines.</li>
+                <li>Contributed to operational efficiency and safety in aviation by following strict guidelines.</li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>Tattoo Videographer</h4>
               <h5>6 Months</h5>
-              <p><em>INKMI Tattoo Studio, Virginia, VA</em></p>
+              <p><em>INKMI Tattoo Studio — Virginia</em></p>
               <ul>
-                <li>Undertook the task of recording and editing videos using Adobe Premiere Pro within designated timeframes.</li>
-                <li>Produce a polished final product that would draw attention to potential clients.</li>
-                <li>Setup/take down recording equipment and ensure cleanliness of tattoo studio.</li>
+                <li>Recorded and edited videos using Adobe Premiere Pro within designated timeframes.</li>
+                <li>Produced a polished final product to attract potential clients and grow the studio's social media presence.</li>
+                <li>Set up and took down recording equipment and maintained cleanliness of the tattoo studio.</li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div>
 
           </div>
 
-        </div>
+        </div><!-- /row -->
 
       </div>
 
