@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>About — FLUGO</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/portfolio-details.css" rel="stylesheet">
+
+  <style>
+    /* ── About page overrides ──────────────────────────────── */
+    .about-profile-img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 4px;
+      display: block;
+    }
+
+    .about-role {
+      font-family: var(--nav-font);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      margin-bottom: 14px;
+    }
+
+    .about-bio h2 {
+      font-family: var(--heading-font);
+      font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+      font-weight: 700;
+      color: var(--heading-color);
+      margin-bottom: 22px;
+      line-height: 1.3;
+    }
+
+    .about-bio p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: color-mix(in srgb, var(--default-color), transparent 25%);
+      margin-bottom: 16px;
+    }
+
+    .about-bio p:last-child { margin-bottom: 0; }
+
+    /* Skills section */
+    .about-skills-title {
+      font-family: var(--heading-font);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      color: var(--heading-color);
+      margin-bottom: 8px;
+    }
+
+    .about-skills-sub {
+      font-size: 14px;
+      color: color-mix(in srgb, var(--default-color), transparent 45%);
+      margin-bottom: 40px;
+    }
+
+    .skill-group-label {
+      font-family: var(--nav-font);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      margin-bottom: 16px;
+    }
+
+    /* Skill tag pills */
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 0;
+    }
+
+    .skill-tag {
+      display: inline-block;
+      padding: 7px 16px;
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 75%);
+      font-family: var(--nav-font);
+      font-size: 13px;
+      font-weight: 500;
+      color: color-mix(in srgb, var(--default-color), transparent 15%);
+      background: var(--surface-color);
+      transition: border-color 0.2s, color 0.2s;
+      cursor: default;
+    }
+
+    .skill-tag:hover {
+      border-color: var(--accent-color);
+      color: var(--heading-color);
+    }
+
+    /* Override the global img-fluid border-radius for this page only */
+    .about-profile-img { border-radius: 4px; }
+  </style>
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/fugo.png" alt="FLUGO logo">
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="services.html">Photography</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+        <button class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Toggle navigation"></button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ── About Section ──────────────────────────────────── -->
+    <section id="about" class="about section" style="padding-top: 100px;">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Page heading -->
+        <p class="about-role">Graphic Designer &amp; Software Developer</p>
+        <h1 class="pd-title">About Me</h1>
+        <span class="pd-title-line"></span>
+
+        <div class="row gy-5 align-items-start">
+
+          <!-- Profile image -->
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <img src="assets/img/profile-img-min.jpg" class="about-profile-img" alt="Profile photo">
+          </div>
+
+          <!-- Bio -->
+          <div class="col-lg-9 col-md-8" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-bio">
+              <h2>Graphic Designer &amp; Software Developer.</h2>
+              <p>
+                I'm a software developer with four years of hands-on experience building scalable, efficient, and maintainable software solutions in collaborative, team-driven environments. I enjoy solving complex technical problems, breaking them down into practical solutions, and building reliable systems with a strong focus on performance, usability, and long-term maintainability.
+              </p>
+              <p>
+                I have a strong foundation in software development and value clean architecture, reusable code, effective debugging, testing, version control, and clear technical documentation. I'm comfortable working through complex requirements, identifying technical challenges, and translating them into well-structured implementations.
+              </p>
+              <p>
+                My background in graphic design also influences how I approach development, giving me a strong understanding of user experience and visual design. This allows me to bridge the gap between design and engineering, creating solutions that are both technically robust and intuitive to use.
+              </p>
+              <p>
+                I work well in collaborative environments and value clear communication, knowledge sharing, and continuous learning. I'm always looking to improve my technical skills, take on challenging projects, and contribute to building high-quality software.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- ── Skills Section ─────────────────────────────────── -->
+    <section class="skills section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <hr class="pd-divider" style="margin-top: 0;">
+
+        <h2 class="about-skills-title" data-aos="fade-up">Skills</h2>
+        <p class="about-skills-sub" data-aos="fade-up" data-aos-delay="50">A breakdown of my technical and creative toolkit.</p>
+
+        <div class="row gy-5">
+
+          <!-- Development -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <p class="skill-group-label">Development</p>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+            </div>
+          </div>
+
+          <!-- Design -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <p class="skill-group-label">Design</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Photoshop</span>
+              <span class="skill-tag">Illustrator</span>
+              <span class="skill-tag">InDesign</span>
+              <span class="skill-tag">Lightroom</span>
+              <span class="skill-tag">Premiere Pro</span>
+              <span class="skill-tag">Package Design</span>
+              <span class="skill-tag">Typography</span>
+            </div>
+          </div>
+
+          <!-- Tools & Systems -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <p class="skill-group-label">Tools &amp; Systems</p>
+            <div class="skill-tags">
+              <span class="skill-tag">IT Administration</span>
+              <span class="skill-tag">Network Support</span>
+              <span class="skill-tag">Microsoft Excel</span>
+              <span class="skill-tag">Database Management</span>
+              <span class="skill-tag">System Diagnostics</span>
+              <span class="skill-tag">Technical Documentation</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /Skills Section -->
+
+  </main>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
