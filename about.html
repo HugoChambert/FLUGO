@@ -120,6 +120,28 @@
 
     /* Override the global img-fluid border-radius for this page only */
     .about-profile-img { border-radius: 4px; }
+
+    /* Wrapper that lets the noise canvas overlay the image */
+    .about-profile-wrap {
+      position: relative;
+      isolation: isolate;
+      display: block;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    #profile-noise-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.11;
+      mix-blend-mode: overlay;
+      image-rendering: pixelated;
+      display: block;
+    }
   </style>
 </head>
 
@@ -158,7 +180,10 @@
 
           <!-- Profile image -->
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="150">
-            <img src="assets/img/profile-img-min.jpg" class="about-profile-img" alt="Profile photo">
+            <div class="about-profile-wrap">
+              <img src="assets/img/profile-img-min.jpg" class="about-profile-img" alt="Profile photo">
+              <canvas id="profile-noise-canvas"></canvas>
+            </div>
           </div>
 
           <!-- Bio -->
@@ -203,11 +228,15 @@
               <span class="skill-tag">HTML</span>
               <span class="skill-tag">CSS</span>
               <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TypeScript</span>
               <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
               <span class="skill-tag">SQL</span>
               <span class="skill-tag">Git</span>
               <span class="skill-tag">React</span>
               <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Bash / Shell</span>
             </div>
           </div>
 
@@ -220,8 +249,13 @@
               <span class="skill-tag">InDesign</span>
               <span class="skill-tag">Lightroom</span>
               <span class="skill-tag">Premiere Pro</span>
+              <span class="skill-tag">After Effects</span>
+              <span class="skill-tag">Figma</span>
               <span class="skill-tag">Package Design</span>
+              <span class="skill-tag">Brand Identity</span>
+              <span class="skill-tag">Layout Design</span>
               <span class="skill-tag">Typography</span>
+              <span class="skill-tag">Photo Editing</span>
             </div>
           </div>
 
@@ -231,9 +265,13 @@
             <div class="skill-tags">
               <span class="skill-tag">IT Administration</span>
               <span class="skill-tag">Network Support</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Docker</span>
               <span class="skill-tag">Microsoft Excel</span>
+              <span class="skill-tag">Microsoft Office Suite</span>
               <span class="skill-tag">Database Management</span>
               <span class="skill-tag">System Diagnostics</span>
+              <span class="skill-tag">Agile / Scrum</span>
               <span class="skill-tag">Technical Documentation</span>
             </div>
           </div>
@@ -259,6 +297,74 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <!-- Film-grain noise overlay — profile image -->
+  <script>
+    (function () {
+      var FPS   = 12;
+      var GRAIN = 1;
+
+      var canvas = document.getElementById('profile-noise-canvas');
+      if (!canvas) return;
+      var ctx = canvas.getContext('2d');
+      if (!ctx) return;
+
+      function resize() {
+        canvas.width  = Math.ceil(canvas.offsetWidth  / GRAIN);
+        canvas.height = Math.ceil(canvas.offsetHeight / GRAIN);
+      }
+
+      function drawFrame() {
+        var w   = canvas.width;
+        var h   = canvas.height;
+        var img = ctx.createImageData(w, h);
+        var d   = img.data;
+        for (var i = 0; i < d.length; i += 4) {
+          var v = Math.random() * 255 | 0;
+          d[i]     = v;
+          d[i + 1] = v;
+          d[i + 2] = v;
+          d[i + 3] = 255;
+        }
+        ctx.putImageData(img, 0, 0);
+      }
+
+      var rafId    = null;
+      var lastTs   = 0;
+      var interval = 1000 / FPS;
+
+      function loop(now) {
+        rafId = requestAnimationFrame(loop);
+        if (document.hidden) return;
+        if (now - lastTs < interval) return;
+        lastTs = now;
+        drawFrame();
+      }
+
+      resize();
+      window.addEventListener('resize', resize);
+      drawFrame();
+
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      rafId = requestAnimationFrame(loop);
+
+      window.addEventListener('pagehide', function () {
+        if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; }
+        window.removeEventListener('resize', resize);
+      });
+
+      // Restart when browser restores the page from bfcache (back/forward nav)
+      window.addEventListener('pageshow', function (e) {
+        if (!e.persisted) return;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        resize();
+        window.addEventListener('resize', resize);
+        lastTs = 0;
+        rafId = requestAnimationFrame(loop);
+      });
+    })();
+  </script>
 
 </body>
 

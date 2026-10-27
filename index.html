@@ -44,6 +44,20 @@
         rgba(0, 0, 0, 0.72) 100%
       );
     }
+
+    /* Film-grain noise canvas */
+    #noise-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+      opacity: 0.11;
+      mix-blend-mode: overlay;
+      image-rendering: pixelated;
+      display: block;
+    }
   </style>
 </head>
 
@@ -73,6 +87,8 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
+
+      <canvas id="noise-canvas"></canvas>
 
       <img src="assets/img/hero-bg-min.JPG" alt="" data-aos="fade-in">
 
@@ -114,6 +130,77 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Film-grain noise overlay -->
+  <script>
+    (function () {
+      var OPACITY = 0.11;  // 0–1, grain visibility  (applied via CSS)
+      var FPS     = 12;    // redraws per second
+      var GRAIN   = 1;     // noise pixel size in CSS px (1 = finest, 4 = chunky)
+
+      var canvas = document.getElementById('noise-canvas');
+      if (!canvas) return;
+      var ctx = canvas.getContext('2d');
+      if (!ctx) return;
+
+      function resize() {
+        canvas.width  = Math.ceil(window.innerWidth  / GRAIN);
+        canvas.height = Math.ceil(window.innerHeight / GRAIN);
+      }
+
+      function drawFrame() {
+        var w   = canvas.width;
+        var h   = canvas.height;
+        var img = ctx.createImageData(w, h);
+        var d   = img.data;
+        for (var i = 0; i < d.length; i += 4) {
+          var v = Math.random() * 255 | 0;
+          d[i]     = v;   // R
+          d[i + 1] = v;   // G
+          d[i + 2] = v;   // B
+          d[i + 3] = 255; // A
+        }
+        ctx.putImageData(img, 0, 0);
+      }
+
+      var rafId   = null;
+      var lastTs  = 0;
+      var interval = 1000 / FPS;
+
+      function loop(now) {
+        rafId = requestAnimationFrame(loop);
+        if (document.hidden) return;
+        if (now - lastTs < interval) return;
+        lastTs = now;
+        drawFrame();
+      }
+
+      // Initialise
+      resize();
+      window.addEventListener('resize', resize);
+      drawFrame();
+
+      // Respect prefers-reduced-motion: only the static first frame
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      rafId = requestAnimationFrame(loop);
+
+      window.addEventListener('pagehide', function () {
+        if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; }
+        window.removeEventListener('resize', resize);
+      });
+
+      // Restart when browser restores the page from bfcache (back/forward nav)
+      window.addEventListener('pageshow', function (e) {
+        if (!e.persisted) return;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        resize();
+        window.addEventListener('resize', resize);
+        lastTs = 0;
+        rafId = requestAnimationFrame(loop);
+      });
+    })();
+  </script>
 
 </body>
 

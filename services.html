@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>FLUGO [PORTFOLIO]</title>
+  <title>Photography — FLUGO</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -27,6 +27,28 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/portfolio-details.css" rel="stylesheet">
+
+  <style>
+    /* Noise canvas overlay for each photo */
+    .photo-noise-wrap {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .img-noise-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.11;
+      mix-blend-mode: overlay;
+      image-rendering: pixelated;
+      display: block;
+    }
+  </style>
 
 </head>
 
@@ -151,6 +173,86 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Film-grain noise overlay — photography images -->
+  <script>
+    (function () {
+      var FPS      = 12;
+      var GRAIN    = 1;
+      var interval = 1000 / FPS;
+      var lastTs   = 0;
+      var rafId    = null;
+
+      // Mark each photo wrapper and inject a canvas
+      var wrappers = document.querySelectorAll('.portfolio-item > div');
+      var canvases = [];
+
+      wrappers.forEach(function (wrap) {
+        wrap.classList.add('photo-noise-wrap');
+        var c = document.createElement('canvas');
+        c.className = 'img-noise-canvas';
+        wrap.appendChild(c);
+        canvases.push(c);
+      });
+
+      function resizeAll() {
+        canvases.forEach(function (c) {
+          c.width  = Math.ceil(c.offsetWidth  / GRAIN);
+          c.height = Math.ceil(c.offsetHeight / GRAIN);
+        });
+      }
+
+      function drawCanvas(c) {
+        var ctx = c.getContext('2d');
+        if (!ctx || !c.width || !c.height) return;
+        var img = ctx.createImageData(c.width, c.height);
+        var d   = img.data;
+        for (var i = 0; i < d.length; i += 4) {
+          var v = Math.random() * 255 | 0;
+          d[i]     = v;
+          d[i + 1] = v;
+          d[i + 2] = v;
+          d[i + 3] = 255;
+        }
+        ctx.putImageData(img, 0, 0);
+      }
+
+      function drawAll() {
+        canvases.forEach(drawCanvas);
+      }
+
+      function loop(now) {
+        rafId = requestAnimationFrame(loop);
+        if (document.hidden) return;
+        if (now - lastTs < interval) return;
+        lastTs = now;
+        drawAll();
+      }
+
+      resizeAll();
+      window.addEventListener('resize', resizeAll);
+      drawAll();
+
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      rafId = requestAnimationFrame(loop);
+
+      window.addEventListener('pagehide', function () {
+        if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; }
+        window.removeEventListener('resize', resizeAll);
+      });
+
+      // Restart when browser restores the page from bfcache (back/forward nav)
+      window.addEventListener('pageshow', function (e) {
+        if (!e.persisted) return;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        resizeAll();
+        window.addEventListener('resize', resizeAll);
+        lastTs = 0;
+        rafId = requestAnimationFrame(loop);
+      });
+    })();
+  </script>
 
 </body>
 

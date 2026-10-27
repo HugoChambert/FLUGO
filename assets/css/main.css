@@ -1426,3 +1426,26 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
+
+/*--------------------------------------------------------------
+# Active nav link — driven by body class, no JS required
+--------------------------------------------------------------*/
+
+/* Shared helper: makes the underline ::before fully visible */
+body.index-page   .navmenu a[href="index.html"]:before,
+body.about-page   .navmenu a[href="about.html"]:before,
+body.portfolio-page .navmenu a[href="portfolio.html"]:before,
+body.services-page  .navmenu a[href="services.html"]:before,
+body.resume-page  .navmenu a[href="resume.html"]:before {
+  visibility: visible;
+  width: 100%;
+}
+
+/* Shared helper: applies the active text colour */
+body.index-page   .navmenu a[href="index.html"],
+body.about-page   .navmenu a[href="about.html"],
+body.portfolio-page .navmenu a[href="portfolio.html"],
+body.services-page  .navmenu a[href="services.html"],
+body.resume-page  .navmenu a[href="resume.html"] {
+  color: var(--nav-hover-color);
+}
